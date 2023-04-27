@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/iv_inicio"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/androidpassport"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_nombre"
+        android:layout_width="210dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="316dp"
+        android:background="#CDDC39"
+        android:ems="10"
+        android:hint="@string/et_nombre"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="124dp"
+        android:layout_height="169dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/tv1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_record"
+        android:layout_width="128dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="140dp"
+        android:text="@string/tv_record"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_nuestro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/tv_nuestro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/bt_jugar"
+        android:layout_width="119dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="28dp"
+        android:onClick="jugar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1"
+        app:srcCompat="@drawable/botoninicio" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
