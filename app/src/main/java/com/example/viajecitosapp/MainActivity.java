@@ -10,11 +10,13 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.BufferedReader;
+
 public class MainActivity extends AppCompatActivity {
 
     private EditText et_nombre;
     private Button bt_jugar;
-    private TextView tv1,tv_nuestro;
+    private TextView tv1,tv_nuestro,tv_record;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +24,34 @@ public class MainActivity extends AppCompatActivity {
 
         et_nombre = (EditText) findViewById(R.id.et_nombre);
         String nombre = et_nombre.getText().toString();
+        tv_record=(TextView)findViewById(R.id.tv_record);
+
+        //crear los String para meter archivos
+
+       /* String archivos[]=fileList();
+
+        if(ArchivoExiste(archivos,"puntuacion.txt")){
+            try {
+                //abrimos archivo
+                ImputStreamReader archivo= new ImputStreamReader(openFileImput("puntuacion.txt"));
+                //buffer primera linea
+                BufferedReader br= new BufferedReader(archivo);
+                //crea linea de texto
+                String linea= br.readline();
+                //mostrar linea
+                String archivoCompleto="";
+                while (linea!=null){
+                    archivoCompleto=archivoCompleto + linea + "\n";
+                    linea=br.readLine();
+                    br.close();
+                    archivo.close();
+                    tv_record.setText(archivoCompleto);
+                }
+            }catch(Exception e){}
+
+            private boolean ArchivoExiste(String)
+        }*/
+
 
     }
     public void jugar(View view) {

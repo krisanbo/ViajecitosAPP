@@ -60,7 +60,6 @@ public class Nivel1 extends AppCompatActivity {
         ArrayList<Integer> elegido = new ArrayList<Integer>();
         elegido.add(n_bandera);
 
-        //añado las otras opciones
 
         int i = 1;
         while (i < 5) {
@@ -95,7 +94,7 @@ public class Nivel1 extends AppCompatActivity {
     }
 
     public static int numeroAleatorio(String tipo, int size) {
-        int numero = 0;
+        int numero=0 ;
 
         if (tipo.equals("rb")) {
             numero = (int) (Math.random() * size + 1);
@@ -109,7 +108,7 @@ public class Nivel1 extends AppCompatActivity {
     public void comprobar(View view) {
         String correcta = respuesta.getText().toString();
         String scoreString = tv_score.getText().toString();
-        int scoreInt = 0;
+        int scoreInt=0;
 
         String seleccion = "";
 
